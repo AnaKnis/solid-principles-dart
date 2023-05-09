@@ -2,11 +2,11 @@ abstract class Bird {
   void peck();
 }
 
-abstract class FlyingBird extends Bird {
+abstract class FlyingBird implements Bird {
   void fly();
 }
 
-class Falcon extends FlyingBird {
+class Falcon implements FlyingBird {
   @override
   void peck() {
     print('I am a Falcon, I can peck');
@@ -18,7 +18,7 @@ class Falcon extends FlyingBird {
   }
 }
 
-class Penguin extends Bird {
+class Penguin implements Bird {
   @override
   void peck() {
     print('I am a Penguin, I can peck');
