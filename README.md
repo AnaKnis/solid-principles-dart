@@ -4,7 +4,7 @@
 Princípio da Responsabilidade Única - Cada classe, objeto, entidade ou função deve ter apenas uma única responsabilidade, ou seja, deve estar especializado em um único assunto.
 
 ## Open/Closed Principle (OCP)<br>
-Princípio do Aberto/Fechado - Uma classe, objeto, entidade ou função deve estar aberto para extensão, mas fechado para modificação, o que significa que o comportamento deve poder ser estendido sem precisar alterar o código-fonte original.
+Princípio do Aberto/Fechado - Uma classe deve estar aberta para extensão, mas fechada para modificação, o que significa que o comportamento deve poder ser estendido sem precisar alterar o código-fonte original.
 
 ## Liskov Substitution Principle (LSP)<br>
 Princípio da Substituição de Liskov - Uma classe derivada deve ser substituível por sua classe base sem quebrar o comportamento correto do programa. Objetos de uma subclasse devem ser capazes de serem usados em qualquer lugar onde objetos da superclasse são usados, sem causar efeitos colaterais indesejados.
