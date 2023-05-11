@@ -8,10 +8,6 @@ abstract class SoundMaker implements Animal {
   void makeSound();
 }
 
-abstract class Swimmer implements Animal {
-  void swim();
-}
-
 class Dog implements SoundMaker {
   @override
   void eat() {
@@ -34,7 +30,7 @@ class Dog implements SoundMaker {
   }
 }
 
-class Fish implements Swimmer {
+class Fish implements Animal {
   @override
   void eat() {
     // implementation for eating
@@ -47,11 +43,6 @@ class Fish implements Swimmer {
 
   @override
   void move() {
-    // implementation for swimming
-  }
-
-  @override
-  void swim() {
     // implementation for swimming
   }
 }
@@ -84,6 +75,6 @@ void main() {
   final duck = Duck();
 
   dog.makeSound();
-  fish.swim();
+  fish.move();
   duck.fly();
 }
